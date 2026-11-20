@@ -1,0 +1,94 @@
+{
+  "name": "AlphaShare",
+  "description": "A secure file sharing bot using Telegram.",
+  "repository": "https://github.com/utkarshdubey2008/Alphashare",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "The Telegram bot token from @BotFather",
+      "required": true
+    },
+    "API_ID": {
+      "description": "Your Telegram API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash from my.telegram.org",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "MongoDB connection string",
+      "required": true
+    },
+    "DATABASE_NAME": {
+      "description": "The name of the database for storing bot data",
+      "value": "file_share_bot",
+      "required": true
+    },
+    "DB_CHANNEL_ID": {
+      "description": "Channel ID where files will be stored",
+      "required": true
+    },
+    "FORCE_SUB_CHANNEL": {
+      "description": "First mandatory subscription channel",
+      "required": true
+    },
+    "FORCE_SUB_CHANNEL_2": {
+      "description": "Second mandatory subscription channel (set 0 if not used)",
+      "value": "0",
+      "required": false
+    },
+    "CHANNEL_LINK": {
+      "description": "Link to the first mandatory subscription channel",
+      "required": true
+    },
+    "CHANNEL_LINK_2": {
+      "description": "Link to the second mandatory subscription channel (leave empty if not used)",
+      "value": "",
+      "required": false
+    },
+    "DEVELOPER_LINK": {
+      "description": "Link to the developer's Telegram profile or bot support",
+      "required": true
+    },
+    "SUPPORT_LINK": {
+      "description": "Link to the support group or chat for the bot",
+      "required": true
+    },
+    "BOT_USERNAME": {
+      "description": "The username of your bot (without @)",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "The display name of your bot",
+      "value": "Alpha File Share Bot",
+      "required": true
+    },
+    "MODIJI_API_KEY": {
+      "description": "API key for external services (if applicable)",
+      "required": false
+    },
+    "WEB_SERVER": {
+      "description": "Set to True for hosting on platforms like Render/Koyeb; False if using local hosting",
+      "value": "True",
+      "required": true
+    },
+    "PING_URL": {
+      "description": "The health check or ping URL for keeping the bot active",
+      "required": false
+    },
+    "PING_TIME": {
+      "description": "Interval (in seconds) to ping the bot to prevent sleeping",
+      "value": "300",
+      "required": false
+    },
+    "ADMIN_IDS": {
+      "description": "List of admin Telegram user IDs who have control over the bot",
+      "required": true
+    },
+    "PRIVACY_MODE": {
+      "description": "Set to 'on' for restricting users to copy or forward the content",
+      "value": "off",
+      "required": false
+    }
+  }
+}
